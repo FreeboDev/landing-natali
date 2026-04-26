@@ -25,12 +25,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   color: var(--text);
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(116, 188, 198, 0.28), transparent 30%),
     radial-gradient(circle at top right, rgba(209, 175, 126, 0.22), transparent 25%),
@@ -1343,10 +1345,19 @@ p {
 }
 
 @media (max-width: 760px) {
+  body {
+    background: var(--bg-soft);
+  }
+
   .page-shell {
-    width: min(calc(100% - 14px), 100%);
-    margin: 7px auto;
-    border-radius: 26px;
+    width: 100%;
+    min-height: 100svh;
+    margin: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: none;
   }
 
   .site-header {
@@ -1463,6 +1474,10 @@ p {
   .section {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .site-footer {
+    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   }
 
   .hero {
