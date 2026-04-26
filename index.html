@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Swimm | Інструктор з плавання у Варшаві</title>
+    <meta
+      name="description"
+      content="Індивідуальні та групові заняття з плавання для немовлят, дітей і дорослих у Варшаві. Розклад, ціни, локації та інформація про інструктора Наталію Вишинську."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div id="langModal" class="lang-modal">
+        <div class="lang-modal-content">
+          <div class="lang-options">
+            <button class="lang-select-btn" data-lang="ua" aria-label="Українська">
+              <span class="lang-flag" aria-hidden="true">🇺🇦</span>
+              <span>Українська</span>
+            </button>
+            <button class="lang-select-btn" data-lang="pl" aria-label="Polski">
+              <span class="lang-flag" aria-hidden="true">🇵🇱</span>
+              <span>Polski</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Go Swimm">
+          <span class="brand-mark">Go</span>
+          <span class="brand-text">Swimm</span>
+        </a>
+        <nav class="site-nav" id="siteNav">
+          <div class="nav-links">
+            <a href="#programs" data-t="nav_programs">Опис занять</a>
+            <a href="#coach" data-t="nav_coach">Інструктор</a>
+            <a href="#schedule" data-t="nav_location">Локація</a>
+          </div>
+          <div class="nav-cta-wrapper" id="navCtaWrapper">
+            <a class="nav-cta" href="https://ig.me/m/instruktor_plywania_warszawa" target="_blank" rel="noopener noreferrer" data-t="nav_cta">Записатися</a>
+            <button class="cta-slider-trigger" id="ctaSliderTrigger" aria-label="Відкрити запис">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-t="hero_eyebrow">Плавання для немовлят, дітей і дорослих у Варшаві</p>
+            <p class="hero-lead" data-t="hero_lead">
+              Індивідуальні заняття з увагою до техніки та комфортним стартом для
+              малюків і дорослих.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://ig.me/m/instruktor_plywania_warszawa" target="_blank" rel="noopener noreferrer" data-t="hero_insta">
+                Написати в Instagram
+              </a>
+              <a class="button button-secondary" href="#pricing" data-t="hero_prices">Вартість Заняття</a>
+            </div>
+            <div class="hero-mini-story">
+              <p class="mini-story-label" data-t="hero_mini_story_label">Підхід</p>
+              <p data-t="hero_mini_story_text">
+                Кожне заняття має чітку ціль: адаптація, техніка, дихання. Без хаосу, без перевантаження, з увагою до відчуттів у воді.
+              </p>
+            </div>
+          </div>
+
+          <div class="coach-hero-block" id="coach">
+            <div class="coach-layout">
+              <div class="coach-portrait">
+              <div class="portrait-ring">
+                <div class="portrait-inner">
+                  <img src="img/coach" alt="Наталія Вишинська — інструктор з плавання" class="coach-photo">
+                </div>
+              </div>
+            </div>
+
+              <div class="coach-copy">
+              <div class="section-title-brand">
+                <span class="brand-mark" data-t="coach_brand_mark">Про</span>
+                <span class="brand-text" data-t="coach_brand_text">інструктора</span>
+              </div>
+              <h2 data-t="coach_name">Наталія Вишинська</h2>
+                <p class="coach-role" data-t="coach_role">Інструктор з плавання</p>
+                <p data-t="coach_p1">
+                  Випускниця Львівського національного університету ім. Івана Франка за спеціальністю дошкільне
+                  виховання та фізичне виховання.
+                </p>
+                <p data-t="coach_p2">
+                  За плечима 12 років інтенсивних занять плаванням, численні нагороди та перемоги на змаганнях. У роботі
+                  поєднує спортивну базу, уважність до дітей і вміння спокійно вести дорослих від страху води до
+                  впевненого руху.
+                </p>
+                <div class="coach-cred-list">
+                  <span data-t="coach_cred_1">Львівський національний університет ім. Івана Франка</span>
+                  <span data-t="coach_cred_2">Дошкільне виховання та фізичне виховання</span>
+                  <span data-t="coach_cred_3">12 років плавальної практики й змагань</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 
+          <div class="hero-visual">
+            <div class="hero-panel hero-panel-large">
+              <p class="panel-label">Go Swimm</p>
+              <h2>Спокійна адаптація до води, техніка та любов до плавання.</h2>
+              <p>
+                Плавання дає дитині й дорослому не тільки фізичну активність, а й упевненість, нові навички, друзів
+                та відчуття свободи у воді.
+              </p>
+            </div>
+            <div class="hero-stat-grid">
+              <article class="stat-card">
+                <strong>12 років</strong>
+                <span>інтенсивних занять плаванням</span>
+              </article>
+              <article class="stat-card">
+                <strong>2 басейни</strong>
+                <span>у різних районах Варшави</span>
+              </article>
+              <article class="stat-card">
+                <strong>3-5 осіб</strong>
+                <span>у мінігрупі</span>
+              </article>
+              <article class="stat-card">
+                <strong>30-60 хв</strong>
+                <span>тривалість заняття</span>
+              </article>
+            </div>
+            <div class="hero-wave-note">
+              <span>Варшава</span>
+              <span>Техніка</span>
+              <span>Спокійний прогрес</span>
+            </div>
+          </div>
+          -->
+        </section>
+
+        <section class="section intro-strip">
+          <div class="section-heading">
+            <p class="eyebrow" data-t="intro_eyebrow">Для кого ці заняття</p>
+          </div>
+          <div class="value-grid">
+            <article class="value-card featured">
+              <h3 data-t="intro_baby_title">Немовлята</h3>
+              <p data-t="intro_baby_desc">Заняття для малюків від 3 місяців до 2 років з делікатною адаптацією до води.</p>
+            </article>
+            <article class="value-card">
+              <h3 data-t="intro_kids_title">Діти</h3>
+              <p data-t="intro_kids_desc">Розвиток навички плавання, координації, впевненості у воді та любові до руху.</p>
+            </article>
+            <article class="value-card">
+              <h3 data-t="intro_adults_title">Дорослі</h3>
+              <p data-t="intro_adults_desc">Навчання з нуля, постановка стилів плавання та спокійна робота над технікою.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section programs" id="programs">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-t="prog_eyebrow">Опис занять</p>
+              <h2 data-t="prog_title">Програми, побудовані під вік, рівень і ціль.</h2>
+            </div>
+          </div>
+
+          <div class="program-grid">
+            <article class="program-card featured">
+              <p class="card-kicker" data-t="prog_baby_kicker">Від 3 місяців до 2 років</p>
+              <h3 data-t="prog_baby_title">Плавання для немовлят</h3>
+              <p data-t="prog_baby_desc">
+                Перший контакт з водою через довіру, гру та м’яке знайомство з басейном. Заняття проходять у форматі,
+                комфортному для дитини й дорослого.
+              </p>
+            </article>
+            <article class="program-card">
+              <p class="card-kicker" data-t="prog_kids_kicker">Від 2 до 14 років</p>
+              <h3 data-t="prog_kids_title">Дитячі заняття</h3>
+              <p data-t="prog_kids_desc">
+                Освоєння базових навичок, покращення координації, розвиток витривалості та впевненості у власних
+                силах.
+              </p>
+            </article>
+            <article class="program-card">
+              <p class="card-kicker" data-t="prog_adults_kicker">Для дорослих</p>
+              <h3 data-t="prog_adults_title">Постановка стилів плавання</h3>
+              <p data-t="prog_adults_desc">
+                Техніка, ритм, дихання і комфорт у воді для тих, хто тільки починає або хоче плавати красивіше й
+                легше.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 
+        <section class="section methodology" id="method">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Як проходить робота</p>
+              <h2>Система, у якій прогрес помітний уже з перших занять.</h2>
+            </div>
+            <p class="section-note">
+              У стилі сучасного swim coaching: менше випадкових вправ, більше зрозумілої структури, послідовності та
+              спокійної уваги до руху у воді.
+            </p>
+          </div>
+
+          <div class="method-layout">
+            <article class="method-highlight">
+              <p class="card-kicker">Go Swimm Method</p>
+              <h3>Відчуття води важливе не менше, ніж сама техніка.</h3>
+              <p>
+                Наталія будує заняття так, щоб учень не просто повторював рухи, а розумів, як тіло тримається на воді,
+                як працює дихання і чому плавання може бути легким.
+              </p>
+            </article>
+
+            <div class="method-steps">
+              <article class="method-step">
+                <span>01</span>
+                <div>
+                  <h3>Оцінка старту</h3>
+                  <p>Дивимося на вік, досвід, страх води, цілі та комфортний темп входу в заняття.</p>
+                </div>
+              </article>
+              <article class="method-step">
+                <span>02</span>
+                <div>
+                  <h3>Фокус на одному завданні</h3>
+                  <p>Кожен урок має зрозумілий акцент: дихання, ковзання, координація, ритм або адаптація.</p>
+                </div>
+              </article>
+              <article class="method-step">
+                <span>03</span>
+                <div>
+                  <h3>Поступове ускладнення</h3>
+                  <p>Коли база сформована, додаємо довші відрізки, стилі, впевненість і свободу руху у воді.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        -->
+
+        <section class="section promise">
+          <div class="section-heading">
+            <p class="eyebrow" data-t="promise_eyebrow">Що ви отримаєте</p>
+            <h2 data-t="promise_title">Не просто тренування, а впевненість у воді для всієї родини.</h2>
+          </div>
+          <div class="promise-list">
+            <article>
+              <h3 data-t="promise_1_title">Комфорт</h3>
+              <p data-t="promise_1_desc">Спокійна атмосфера для знайомства з водою без тиску й поспіху.</p>
+            </article>
+            <article>
+              <h3 data-t="promise_2_title">Техніка</h3>
+              <p data-t="promise_2_desc">Поступове формування правильних рухів, дихання та координації.</p>
+            </article>
+            <article>
+              <h3 data-t="promise_3_title">Упевненість</h3>
+              <p data-t="promise_3_desc">Навичка, яка допомагає почуватися сильніше у воді та в повсякденному житті.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 
+        <section class="section progress-story">
+          <div class="section-heading">
+            <p class="eyebrow">Що змінюється з часом</p>
+            <h2>Маленькі кроки в басейні складаються у велику внутрішню опору.</h2>
+          </div>
+          <div class="story-grid">
+            <article class="story-card">
+              <p class="story-stage">Старт</p>
+              <h3>Страх і напруга зменшуються</h3>
+              <p>Учень звикає до простору басейну, води, інструктора й темпу заняття.</p>
+            </article>
+            <article class="story-card">
+              <p class="story-stage">База</p>
+              <h3>Рухи стають зрозумілими</h3>
+              <p>З’являється опора на дихання, ковзання, баланс тіла та ритм у воді.</p>
+            </article>
+            <article class="story-card">
+              <p class="story-stage">Результат</p>
+              <h3>Плавання приносить задоволення</h3>
+              <p>Дитина або дорослий рухається впевненіше, спокійніше й з більшою свободою.</p>
+            </article>
+          </div>
+        </section>
+        -->
+
+        <section class="section schedule" id="schedule">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-t="loc_eyebrow">Локація</p>
+            </div>
+          </div>
+
+          <div class="schedule-grid">
+            <article class="schedule-card featured">
+              <h3>Marcina Kasprzaka 1/3, Warszawa</h3>
+              <div class="map-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=Marcina+Kasprzaka+1/3+Warszawa" target="_blank" rel="noopener noreferrer" class="map-button google-maps">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  Google Maps
+                </a>
+                <a href="https://maps.apple.com/?q=Marcina+Kasprzaka+1/3+Warszawa" target="_blank" rel="noopener noreferrer" class="map-button apple-maps">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.1 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.07 2.47.3 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42.94-1.38 1.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  Apple Maps
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 
+        <section class="section audience-band">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Формати</p>
+              <h2>Заняття підлаштовуються під людину, а не людина під шаблон.</h2>
+            </div>
+            <p class="section-note">
+              Саме тому в Go Swimm є простір і для обережного першого контакту з водою, і для більш спортивної
+              технічної роботи.
+            </p>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card">
+              <h3>Для немовлят і батьків</h3>
+              <p>М’які сесії з підтримкою, грою та ритуалами, які допомагають дитині відчувати безпеку.</p>
+            </article>
+            <article class="audience-card">
+              <h3>Для дітей</h3>
+              <p>Баланс між дисципліною та задоволенням від руху, щоб плавання ставало природною навичкою.</p>
+            </article>
+            <article class="audience-card">
+              <h3>Для дорослих</h3>
+              <p>Робота без сорому і поспіху: від подолання страху води до техніки основних стилів.</p>
+            </article>
+          </div>
+        </section>
+        -->
+
+        <section class="section checklist">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-t="pack_eyebrow">Що потрібно брати</p>
+              <h2 data-t="pack_title">Короткий список для комфортного відвідування басейну.</h2>
+            </div>
+          </div>
+
+          <div class="checklist-grid">
+            <article class="check-item">
+              <span class="check-icon">🩱</span>
+              <h3 data-t="pack_item_1">Купальник або плавки</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">👶</span>
+              <h3 data-t="pack_item_2">Плавальні підгузки для дітей до 3 років</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">🏊‍♀️</span>
+              <h3 data-t="pack_item_3">Шапочка для плавання</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">🥽</span>
+              <h3 data-t="pack_item_4">Плавальні окуляри</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">🧖‍♀️</span>
+              <h3 data-t="pack_item_5">Рушник або халат</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">🧼</span>
+              <h3 data-t="pack_item_6">Засоби для душу</h3>
+            </article>
+            <article class="check-item">
+              <span class="check-icon">🩴</span>
+              <h3 data-t="pack_item_7">Змінне взуття для басейну</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="section pricing" id="pricing">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-t="price_eyebrow">Вартість Занять</p>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card featured">
+              <p class="card-kicker" data-t="price_1_kicker">Індивідуальні заняття</p>
+              <h3 data-t="price_1_title">1 на 1</h3>
+              <ul>
+                <li data-t="price_1_opt1">99 zł / 30 хв</li>
+                <li data-t="price_1_opt2">129 zł / 45 хв</li>
+                <li data-t="price_1_opt3">159 zł / 60 хв</li>
+              </ul>
+            </article>
+            <article class="price-card">
+              <p class="card-kicker" data-t="price_2_kicker">Мінігрупа</p>
+              <h3 data-t="price_2_title">3-5 осіб</h3>
+              <ul>
+                <li data-t="price_2_opt1">65 zł / 30 хв</li>
+                <li data-t="price_2_opt2">Комфортний формат для дітей і дорослих</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- 
+        <section class="section testimonials">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Враження</p>
+              <h2>Люди повертаються не тільки за результатом, а й за відчуттям спокою у воді.</h2>
+            </div>
+            <p class="section-note">
+              Тут варто додати реальні відгуки клієнтів, коли вони будуть підготовлені. Поки секція працює як
+              структурний блок для майбутнього соціального доказу.
+            </p>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p class="testimonial-quote">
+                “Заняття проходять дуже спокійно, але водночас відчувається структура і реальний прогрес.”
+              </p>
+              <p class="testimonial-author">Мама дитини, 5 років</p>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-quote">
+                “Почав ходити з великим страхом води, а зараз уже розумію техніку і не напружуюся в басейні.”
+              </p>
+              <p class="testimonial-author">Дорослий учень</p>
+            </article>
+          </div>
+        </section>
+        -->
+
+        <section class="section faq" id="faq">
+          <div class="section-heading">
+            <p class="eyebrow" data-t="faq_eyebrow">Поширені питання</p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-t="faq_q1">Чи можна почати з нуля?</summary>
+              <div class="faq-answer">
+                <p data-t="faq_a1">Так. Є окремий формат для тих, хто не плавав раніше або відчуває страх перед водою.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-t="faq_q2">Чи можуть батьки бути поруч із немовлятами?</summary>
+              <div class="faq-answer">
+                <p data-t="faq_a2">Так, формат занять для найменших передбачає спокійний супровід дорослого.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-t="faq_q3">Як обрати між індивідуальним і груповим заняттям?</summary>
+              <div class="faq-answer">
+                <p data-t="faq_a3">Індивідуальні сесії підходять для швидкого старту й точкової роботи, мінігрупи для регулярної практики.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 
+        <section class="section cta-banner">
+          <div>
+            <p class="eyebrow">Приєднуйтесь</p>
+            <h2>Обирайте зручну локацію у Варшаві та записуйтеся на своє заняття.</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              Записатися зараз
+            </a>
+            <a class="button button-secondary" href="#schedule">Подивитися графік</a>
+          </div>
+        </section>
+        -->
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-content">
+          <a class="brand" href="#top" aria-label="Go Swimm">
+            <span class="brand-mark">Go</span>
+            <span class="brand-text">Swimm</span>
+          </a>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/instruktor_plywania_warszawa?igsh=MTM0ZGZjeDVvd290Yw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://m.me/" target="_blank" rel="noopener noreferrer" aria-label="Messenger">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M7.5 13.2l3.3-3.4 2.2 2.1 3-3.2-2.5 5-2.3-2-3.7 1.5z"></path></svg>
+            </a>
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3L2.8 10.4c-1 .4-1 1.8.1 2.1l4.8 1.5 1.8 5.4c.3 1 1.6 1.2 2.2.3l2.8-3.8 4.8 3.5c.8.6 1.9.1 2.1-.9L23 4.4c.2-1-.8-1.8-1.8-1.4z"></path><path d="M7.7 13.9l10-7.2"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-t="footer_rights">&copy; 2026 Go Swimm. Всі права захищені.</p>
+          <div class="footer-author-wrap">
+            <span class="author-prefix">Design &amp; <span class="author-prefix-accent">Development</span> by</span>
+            <a class="footer-author-btn" href="https://my-web2-0.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Портфоліо автора VT">
+              <span class="author-logo">&lt;/&gt; <strong>VT</strong></span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
