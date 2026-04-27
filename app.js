@@ -1,4 +1,4 @@
-const revealItems = document.querySelectorAll(".section, .hero, .site-footer");
+const revealItems = document.querySelectorAll(".section, .hero, .coach-hero-block, .site-footer");
 
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
@@ -50,11 +50,14 @@ const translations = {
     coach_brand_text: "інструктора",
     coach_name: "Наталія Вишинська",
     coach_role: "Інструктор з плавання",
-    coach_p1: "Випускниця Львівського національного університету ім. Івана Франка за спеціальністю дошкільне виховання та фізичне виховання.",
-    coach_p2: "За плечима 12 років інтенсивних занять плаванням, численні нагороди та перемоги на змаганнях. У роботі поєднує спортивну базу, уважність до дітей і вміння спокійно вести дорослих від страху води до впевненого руху.",
-    coach_cred_1: "Львівський національний університет ім. Івана Франка",
-    coach_cred_2: "Дошкільне виховання та фізичне виховання",
-    coach_cred_3: "12 років плавальної практики й змагань",
+    coach_p1: "Інструктор з плавання з понад 12 роками практики та змагального досвіду. Працює з дітьми й дорослими, допомагаючи опанувати техніку, подолати страх води та впевнено почуватися у басейні. Поєднує спортивний підхід, уважність і комфортну подачу матеріалу.",
+    coach_p2: "Інструктор з плавання з понад 12 роками практики та змагального досвіду. Працює з дітьми й дорослими, допомагаючи опанувати техніку, подолати страх води та впевнено почуватися у басейні. Поєднує спортивний підхід, уважність і комфортну подачу матеріалу.",
+    coach_cred_1: "Учасниця професійного семінару «Навчання дітей раннього віку» (2016)",
+    coach_cred_2: "Диплом бакалавра зі спеціальності «Дошкільна освіта»",
+    coach_cred_3: "Учасниця конференції для інструкторів Mania Pływania (2024)",
+    coach_cred_4: "Кваліфікація «Legitymacja Instruktora» Польської Академії Тренерів Green Way (2024)",
+    coach_cred_5: "Сертифікат «Instruktor Nauki Pływania Niemowląt» від Polska Akademia Trenerów i Instruktorów Sportu Green Way (2024)",
+    coach_cred_6: "Учасниця конференції для інструкторів Mania Pływania (2025)",
     coach_insta: "Instagram",
     coach_fb: "Facebook",
     intro_eyebrow: "Для кого ці заняття",
@@ -142,9 +145,12 @@ const translations = {
     coach_role: "Instruktor pływania",
     coach_p1: "Absolwentka Lwowskiego Uniwersytetu Narodowego im. Iwana Franki na kierunku wychowanie przedszkolne i wychowanie fizyczne.",
     coach_p2: "Za mną 12 lat intensywnych treningów pływackich, liczne nagrody i zwycięstwa w zawodach. W pracy łączy bazę sportową, uważność na dzieci i umiejętność spokojnego prowadzenia dorosłych od lęku przed wodą do pewnego ruchu.",
-    coach_cred_1: "Lwowski Uniwersytet Narodowy im. Iwana Franki",
-    coach_cred_2: "Wychowanie przedszkolne i wychowanie fizyczne",
-    coach_cred_3: "12 lat praktyki pływackiej i zawodów",
+    coach_cred_1: "Uczestniczka seminarium zawodowego „Nauczanie dzieci we wczesnym wieku” (2016)",
+    coach_cred_2: "Dyplom licencjata na kierunku „Edukacja przedszkolna”",
+    coach_cred_3: "Uczestniczka konferencji dla instruktorów Mania Pływania (2024)",
+    coach_cred_4: "Kwalifikacja „Legitymacja Instruktora” Polskiej Akademii Trenerów Green Way (2024)",
+    coach_cred_5: "Certyfikat „Instruktor Nauki Pływania Niemowląt” od Polska Akademia Trenerów i Instruktorów Sportu Green Way (2024)",
+    coach_cred_6: "Uczestniczka konferencji dla instruktorów Mania Pływania (2025)",
     coach_insta: "Instagram",
     coach_fb: "Facebook",
     intro_eyebrow: "Dla kogo są te zajęcia",
