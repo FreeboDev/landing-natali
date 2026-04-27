@@ -56,7 +56,7 @@ const translations = {
     coach_cred_2: "Диплом бакалавра зі спеціальності «Дошкільна освіта»",
     coach_cred_3: "Учасниця конференції для інструкторів Mania Pływania (2024)",
     coach_cred_4: "Кваліфікація «Legitymacja Instruktora» Польської Академії Тренерів Green Way (2024)",
-    coach_cred_5: "Сертифікат «Instruktor Nauki Pływania Niemowląt» від Polska Akademia Trenerów i Instruktorów Sportu Green Way (2024)",
+    coach_cred_5: "Сертифікат «Instruktor Nauki Pływania Niemowląt» від Polska Akademia Trenerów i Instruktorów Sportu(2024)",
     coach_cred_6: "Учасниця конференції для інструкторів Mania Pływania (2025)",
     coach_insta: "Instagram",
     coach_fb: "Facebook",
