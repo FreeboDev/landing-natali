@@ -105,7 +105,7 @@ const translations = {
     // price_1_title: "1 на 1",
     price_1_opt1: "99 zł / 30 хв",
     price_1_opt2: "149 zł / 45 хв",
-    price_1_opt3: "Заняття для немовлят до 3го року життя",
+    price_1_opt3: "Немовлята до 3го року життя 30хв/119 zł",
     price_2_kicker: "Групові заняття для немовлят",
     price_2_title: "До 7 осіб",
     price_2_opt1: "85 zł / 30 хв",
