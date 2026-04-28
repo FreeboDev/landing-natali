@@ -102,10 +102,12 @@ const translations = {
     price_title: "Прозорий прайс без зайвих умов.",
     price_fb: "Написати у Facebook",
     price_1_kicker: "індивідульані заняття для дітей від 3го року життя та дорослих",
+    price_2_kicker: "Немовлята до 3го року життя",
+
     // price_1_title: "1 на 1",
     price_1_opt1: "99 zł / 30 хв",
     price_1_opt2: "149 zł / 45 хв",
-    price_1_opt3: "Немовлята до 3го року життя 30хв/119 zł",
+    price_1_opt3: "119zł / 30хв",
     price_2_kicker: "Групові заняття для немовлят",
     price_2_title: "До 7 осіб",
     price_2_opt1: "85 zł / 30 хв",
