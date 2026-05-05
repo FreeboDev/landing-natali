@@ -231,26 +231,8 @@ function updateLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const langModal = document.getElementById("langModal");
-  const langButtons = document.querySelectorAll(".lang-select-btn");
-
-  setTimeout(() => {
-    langModal.classList.add("is-visible");
-  }, 300);
-
-  langButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const selectedLang = btn.getAttribute("data-lang");
-      updateLanguage(selectedLang);
-      langModal.classList.remove("is-visible");
-      localStorage.setItem("selectedLanguage", selectedLang);
-    });
-  });
-
   const savedLang = localStorage.getItem("selectedLanguage");
-  if (savedLang) {
-    updateLanguage(savedLang);
-  }
+  updateLanguage(savedLang || "ua");
 
   const faqItems = document.querySelectorAll(".faq-item");
   faqItems.forEach((item) => {
