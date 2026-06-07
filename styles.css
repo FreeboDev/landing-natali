@@ -1623,10 +1623,10 @@ p {
   .nav-links {
     display: flex;
     justify-content: center;
-    gap: 16px; /* Increased gap between links */
+    gap: 14px;
     font-size: 0.78rem;
     font-weight: 600;
-    padding-right: 52px;
+    padding-right: 98px;
   }
 
   .nav-links a {
@@ -1650,8 +1650,8 @@ p {
     align-items: center;
     justify-content: center;
     width: 44px;
-    height: 48px; /* Slightly taller to look like a tab */
-    border-radius: 20px 0 0 20px; /* Rounded only on the left */
+    height: 48px;
+    border-radius: 20px 0 0 20px;
     background: rgba(19, 63, 69, 0.68);
     color: var(--gold);
     border: 1px solid rgba(181, 143, 90, 0.36);
@@ -1660,6 +1660,12 @@ p {
     transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -4px 0 12px rgba(19, 63, 69, 0.08);
     backdrop-filter: blur(6px);
+  }
+
+  .cta-slider-trigger svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2.5;
   }
 
   .nav-cta-wrapper.is-open .cta-slider-trigger {

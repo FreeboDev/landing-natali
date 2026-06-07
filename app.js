@@ -108,7 +108,7 @@ const translations = {
     price_1_opt1: "99 zł / 30 хв",
     price_1_opt2: "149 zł / 45 хв",
     price_1_opt3: "119zł / 30хв",
-    price_2_kicker: "Групові заняття для немовлят",
+    price_2_kicker: "Індивідуальні заняття для немовлят до 3ох років",
     price_2_title: "До 7 осіб",
     price_2_opt1: "85 zł / 30 хв",
     price_2_opt2: "Комфортний формат для дітей і дорослих",
@@ -231,8 +231,7 @@ function updateLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("selectedLanguage");
-  updateLanguage(savedLang || "ua");
+  updateLanguage("ua");
 
   const faqItems = document.querySelectorAll(".faq-item");
   faqItems.forEach((item) => {
